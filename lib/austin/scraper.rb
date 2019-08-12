@@ -7,9 +7,9 @@ class Scraper
     doc.css("attractions-attraction-overview-pois-PoiGrid__wrapper--2H3Mo li").each.with_index(1) do |att, index| 
       name = att.css("a")[0].text 
       url = att.css("a")[0].attr("href")
-      type = 
-      price = 
-      # attraction = Austin::Attraction.new(name, url, type, price, index)
+      type = att.css("span")[0].text 
+      price = att.css("span")[0].text 
+      attraction = Austin::Attraction.new(name, url, type, price, index)
     
     
   end 
