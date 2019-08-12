@@ -4,7 +4,7 @@ class CLI
     welcome 
     Scraper.scrape_all_attractions
     print_all_attractions
-    start_selection
+    start
   end 
   
   def welcome 
@@ -15,6 +15,12 @@ class CLI
     puts "" 
     puts "" 
     puts "Enter the number of the attraction you are interested in, for more information." 
+  end 
+  
+  def start
+  end 
+  
+  def print_all_attractions
   end 
   
   
