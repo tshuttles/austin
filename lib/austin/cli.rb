@@ -22,6 +22,8 @@ class CLI
     while input != "exit" do 
       input = gets.strip.downcase 
       
+      
+      
   end 
   
   def print_all_attractions

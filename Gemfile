@@ -5,6 +5,5 @@ gemspec
 
 gem 'require_all'
 gem 'colorize'
-gem 'tty-table'
 gem 'nokogiri'
 gem 'pry'
