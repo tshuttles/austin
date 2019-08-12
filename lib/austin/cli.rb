@@ -22,7 +22,8 @@ class CLI
     while input != "exit" do 
       input = gets.strip.downcase 
       
-      
+      if (1..30).include?(input.to_i)
+        
       
   end 
   
