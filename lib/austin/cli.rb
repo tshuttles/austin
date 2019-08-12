@@ -18,6 +18,10 @@ class CLI
   end 
   
   def start
+    input = "" 
+    while input != "exit" do 
+      input = gets.strip.downcase 
+      
   end 
   
   def print_all_attractions
