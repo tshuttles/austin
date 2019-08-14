@@ -30,12 +30,23 @@ class CLI
         Scraper.single_attraction_scraper(attraction)
         display_attraction(attraction)
         
-        puts ""
+        puts "------------------------------------------------------------------------------"
         puts "Want to see a different attraction? Type 'list' to view the attractions again." 
         puts ""
         puts "Otherwise, type 'exit' to exit."
+        puts "------------------------------------------------------------------------------"
+      elsif input == "list"
         puts ""
-      end 
+        puts ""
+        puts "                      THE TOP ATTRACTIONS IN AUSTIN!"
+        puts ""
+        puts "  Enter the number located next to the attraction you would like details on:"
+        puts ""
+        puts "                      Otherwise, type 'exit' to exit."
+        puts ""
+        puts ""
+        print_all_attractions
+      end
     end 
       
   end 
