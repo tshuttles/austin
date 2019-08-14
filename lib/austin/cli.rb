@@ -23,7 +23,10 @@ class CLI
       input = gets.strip.downcase 
       
       if (1..30).include?(input.to_i)
-        
+        attraction = Attraction.find_attraction(input.to_i)
+        Scraper.single_attraction_scraper(attraction)
+        display_attraction(attraction)
+ 
       
   end 
   
