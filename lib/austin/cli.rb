@@ -17,6 +17,9 @@ class CLI
     puts "Enter the number of the attraction you are interested in, for more information." 
   end 
   
+  def print_all_attractions
+  end 
+  
   def start
     input = "" 
     while input != "exit" do 
@@ -37,7 +40,7 @@ class CLI
       
   end 
   
-  def print_all_attractions
+  def display_attraction
   end 
   
   
