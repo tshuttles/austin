@@ -26,7 +26,14 @@ class CLI
         attraction = Attraction.find_attraction(input.to_i)
         Scraper.single_attraction_scraper(attraction)
         display_attraction(attraction)
- 
+        
+        puts ""
+        puts "Want to see a different attraction? Type 'list' to view the attractions again." 
+        puts ""
+        puts "Otherwise, type 'exit' to exit."
+        puts ""
+      end 
+    end 
       
   end 
   
