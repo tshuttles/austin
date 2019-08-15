@@ -17,6 +17,9 @@ class CLI
   end 
   
   def print_all_attractions
+    puts ""
+    puts "                    THE TOP ATTRACTIONS IN AUSTIN!"
+    puts ""
     Attraction.all.each do |att|
       puts "#{att.index}. #{att.name}"
     end
@@ -44,17 +47,17 @@ class CLI
       elsif input == "list"
         puts ""
         puts ""
-        puts "                      THE TOP ATTRACTIONS IN AUSTIN!"
+        puts "                    THE TOP ATTRACTIONS IN AUSTIN!"
         puts ""
-        puts "  Enter the number located next to the attraction you would like details on:"
+        puts "Enter the number located next to the attraction you would like details on:"
         puts ""
-        puts "                      Otherwise, type 'exit' to exit."
+        puts "                    Otherwise, type 'exit' to exit."
         puts ""
-        puts ""
+        puts "" 
         print_all_attractions
       elsif input != "exit"
         puts "" 
-        puts "Invalid entry. Please type a number for information on an attraction, 'list', or 'exit'."
+        puts "Invalid entry. Please type: a number for information on an attraction, 'list', or 'exit'."
         puts ""
       end
     end 
