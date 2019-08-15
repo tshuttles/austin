@@ -19,8 +19,4 @@ class Scraper
     description = doc.css("#taplc_location_detail_about_card_0")[0].css("span")[0])
     open_hours = doc.css("#taplc_location_detail_about_card_0")[0].css("div")[6])
   end 
-  
-  
-  
-  
 end 
