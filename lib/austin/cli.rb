@@ -30,11 +30,11 @@ class CLI
         Scraper.single_attraction_scraper(attraction)
         display_attraction(attraction)
         
-        puts "------------------------------------------------------------------------------"
+        puts ""
         puts "Want to see a different attraction? Type 'list' to view the attractions again." 
         puts ""
         puts "Otherwise, type 'exit' to exit."
-        puts "------------------------------------------------------------------------------"
+        puts ""
       elsif input == "list"
         puts ""
         puts ""
@@ -54,7 +54,18 @@ class CLI
     end 
   end 
   
-  def display_attraction
+  def display_attraction(attraction)
+    puts ""
+    puts "Attraction: #{attraction.name.upcase}"
+    puts ""
+    puts "Type: "#{attraction.type}"
+    puts ""
+    puts "Description: #{attraction.description}"
+    puts ""
+    puts "Price: #{attraction.price}"
+    puts ""
+    puts "Website: #{attraction.url}"      
+    puts ""
   end 
   
   
