@@ -46,9 +46,12 @@ class CLI
         puts ""
         puts ""
         print_all_attractions
+      elsif input != "exit"
+        puts "" 
+        puts "Invalid entry. Please type a number for information on an attraction, 'list', or 'exit'."
+        puts ""
       end
     end 
-      
   end 
   
   def display_attraction
