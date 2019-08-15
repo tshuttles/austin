@@ -18,6 +18,9 @@ class CLI
   end 
   
   def print_all_attractions
+    Attraction.all.each do |att|
+      puts "#{att.index}. #{att.name}"
+    end
   end 
   
   def start
@@ -58,7 +61,7 @@ class CLI
     puts ""
     puts "Attraction: #{attraction.name.upcase}"
     puts ""
-    puts "Type: "#{attraction.type}"
+    puts "Type: #{attraction.type}"
     puts ""
     puts "Description: #{attraction.description}"
     puts ""
