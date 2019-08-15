@@ -13,6 +13,14 @@ class Scraper
     end 
   end 
   
+  def self.scrape_single_attraction(attraction)
+    doc = Nokogiri::HTML(open("https://www.tripadvisor.com#{attraction.url}")) 
+    
+    description = 
+    open_hours = 
+    
+  end 
+  
   
   
   
