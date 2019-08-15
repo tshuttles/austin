@@ -14,13 +14,16 @@ class CLI
     puts "                   The Live Music Capital of the World!"
     puts "" 
     puts "" 
-    puts "Enter the number of the attraction you are interested in, for more information." 
   end 
   
   def print_all_attractions
     Attraction.all.each do |att|
       puts "#{att.index}. #{att.name}"
     end
+    puts "Enter the number of the attraction you are interested in learning more about!"
+    puts ""
+    puts "Otherwise, type 'exit' to exit."
+    puts "" 
   end 
   
   def start
