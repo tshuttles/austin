@@ -9,9 +9,9 @@ class CLI
   
   def welcome 
     puts "" 
-    puts "                         Welcome to Austin, Texas!"
+    puts "                    Welcome to Austin, Texas!"
     puts "" 
-    puts "                   The Live Music Capital of the World!"
+    puts "               The Live Music Capital of the World!"
     puts "" 
     puts "" 
   end 
@@ -70,9 +70,9 @@ class CLI
     puts ""
     puts "Price: #{attraction.price}"
     puts ""
+    puts "Open Hours: #{attraction.open_hours}"
+    puts ""
     puts "Website: #{attraction.url}"      
     puts ""
   end 
-  
-  
 end 
