@@ -1,4 +1,4 @@
-class Attraction
+class Austin::Attraction
   
   attr_accessor :name, :type, :price, :url, :index, :description, :open_hours 
   

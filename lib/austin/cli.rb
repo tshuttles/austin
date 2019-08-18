@@ -1,8 +1,8 @@
-class CLI 
+class Austin::CLI 
   
   def run
     welcome 
-    Scraper.scrape_all_attractions
+    Austin::Scraper.scrape_all_attractions
     print_all_attractions
     start
   end 
@@ -18,9 +18,9 @@ class CLI
   
   def print_all_attractions
     puts ""
-    puts "                    THE TOP ATTRACTIONS IN AUSTIN!"
+    puts "                  THE TOP ATTRACTIONS IN AUSTIN!"
     puts ""
-    Attraction.all.each do |att|
+    Austin::Attraction.all.each do |att|
       puts "#{att.index}. #{att.name}"
     end
     puts "Enter the number of the attraction you are interested in learning more about!"
