@@ -6,21 +6,25 @@ TODO: Delete this and the text above, and describe your gem
 
 ## Installation
 
-Add this line to your application's Gemfile:
+<!--Add this line to your application's Gemfile:-->
 
-```ruby
-gem 'austin'
-```
+<!--```ruby-->
+<!--gem 'austin'-->
+<!--```-->
 
-And then execute:
+<!--And then execute:-->
 
-    $ bundle
+<!--    $ bundle-->
 
-Or install it yourself as:
+<!--Or install it yourself as:-->
 
-    $ gem install austin
+<!--    $ gem install austin-->
     
-    ****** 'ruby bin/austin'
+To run the program, input: 
+  'bundle install' 
+
+Then input:
+  'ruby bin/austin'
 
 ## Usage
 

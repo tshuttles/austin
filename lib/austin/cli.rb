@@ -3,6 +3,7 @@ class Austin::CLI
   def run
     welcome 
     Austin::Scraper.scrape_all_attractions
+    # binding.pry
     print_all_attractions
     start
   end 

@@ -4,9 +4,9 @@ class Austin::Scraper
   def self.scrape_all_attractions 
     doc = Nokogiri::HTML(open(SITE))
     
-    doc.css("attractions-attraction-overview-pois-PoiGrid__wrapper--2H3Mo li").each.with_index(1) do |att, index| 
-      name = att.css("a")[0].text 
-      url = att.css("a")[0].attr("href").value 
+    doc.css("#FILTERED_LIST li").each.with_index(1) do |att, index| 
+      name = att.css("a")[2].text 
+      url = att.css("a")[0].attr("href") 
       type = att.css("span")[0].text 
       price = att.css("span")[0].text 
       attraction = Austin::Attraction.new(name, url, type, price, index)
