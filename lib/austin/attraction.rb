@@ -4,10 +4,10 @@ class Austin::Attraction
   
   @@all = [] 
   
-  def initialize(name, type, price, url, index)
+  def initialize(name, url, index)
     @name = name 
-    @type = type 
-    @price = price 
+    # @type = type 
+    # @price = price 
     @url = url 
     @index = index 
     @@all << self 
@@ -17,6 +17,8 @@ class Austin::Attraction
     @@all 
   end 
   
-  
+  def self.find_attraction(i)
+    self.all.find {|att| att.index == i}
+  end
   
 end 

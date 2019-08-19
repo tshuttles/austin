@@ -3,7 +3,6 @@ class Austin::CLI
   def run
     welcome 
     Austin::Scraper.scrape_all_attractions
-    # binding.pry
     print_all_attractions
     start
   end 
@@ -37,7 +36,7 @@ class Austin::CLI
       
       if (1..30).include?(input.to_i)
         attraction = Austin::Attraction.find_attraction(input.to_i)
-        Austin::Scraper.single_attraction_scraper(attraction)
+        Austin::Scraper.scrape_single_attraction(attraction)
         display_attraction(attraction)
         
         puts ""
@@ -79,4 +78,5 @@ class Austin::CLI
     puts "Website: #{attraction.url}"      
     puts ""
   end 
+  
 end 
