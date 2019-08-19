@@ -41,7 +41,7 @@ class Austin::CLI
         display_attraction(attraction)
         
         puts ""
-        puts "Want to see a different attraction? Type 'list' to view the attractions again.".purple
+        puts "Want to see a different attraction? Type 'list' to view the attractions again.".green
         puts ""
         puts "Otherwise, type 'exit' to exit.".red
         puts ""
@@ -69,12 +69,12 @@ class Austin::CLI
     puts ""
     puts "Attraction: #{attraction.name.upcase}"
     puts ""
-    puts "Type: #{attraction.type}"
-    puts ""
+    # puts "Type: #{attraction.type}"
+    # puts ""
     puts "Description: #{attraction.description}"
     puts ""
-    puts "Price: #{attraction.price}"
-    puts ""
+    # puts "Price: #{attraction.price}"
+    # puts ""
     puts "Open Hours: #{attraction.open_hours}"
     puts ""
     puts "Website: https://www.tripadvisor.com#{attraction.url}"      
