@@ -1,34 +1,29 @@
 # Austin
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/austin`. To experiment with that code, run `bin/console` for an interactive prompt.
+Welcome to the Austin CLI! This is my first project as a Flatiron Student. 
 
-TODO: Delete this and the text above, and describe your gem
+This application pulls information from Trip Advisor's Banff website https://www.tripadvisor.com/Attractions-g30196-Activities-Austin_Texas.html, which lists 30 different attractions that Austin, Texas, has to offer! Austin is a great, quickly-developing city filled with great food, culture, history, and tech. Find out which attractions you're interested in most and then make your dream trip a reality! 
+
 
 ## Installation
 
-<!--Add this line to your application's Gemfile:-->
+1.  Clone the github repository by entering the following commands into your IDE terminal:
+    'git clone git@github.com:tshuttles/austin.git'
 
-<!--```ruby-->
-<!--gem 'austin'-->
-<!--```-->
+2.  Change to the cloned Austin directory:
+    'cd austin' 
 
-<!--And then execute:-->
+3.  Install all required gems:
+    'bundle install'
 
-<!--    $ bundle-->
+4.  Run the CLI:
+    'ruby bin/austin'
 
-<!--Or install it yourself as:-->
-
-<!--    $ gem install austin-->
-    
-To run the program, input: 
-  'bundle install' 
-
-Then input:
-  'ruby bin/austin'
+5.  Enjoy!
 
 ## Usage
 
-TODO: Write usage instructions here
+After you run 'ruby bin/austin', read the welcome message and then follow the prompt from there!
 
 ## Development
 
