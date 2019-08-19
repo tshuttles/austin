@@ -9,24 +9,24 @@ class Austin::CLI
   
   def welcome 
     puts "" 
-    puts "                    Welcome to Austin, Texas!"
+    puts "                    Welcome to Austin, Texas!".blue
     puts "" 
-    puts "               The Live Music Capital of the World!"
+    puts "               The Live Music Capital of the World!".blue
     puts "" 
     puts "" 
   end 
   
   def print_all_attractions
     puts ""
-    puts "                  THE TOP ATTRACTIONS IN AUSTIN!"
+    puts "                  THE TOP ATTRACTIONS IN AUSTIN!".blue
     puts ""
     Austin::Attraction.all.each do |att|
-      puts "#{att.index}. #{att.name}"
+      puts "#{att.index}. #{att.name}".white
     end
     puts ""
-    puts "Enter the number of the attraction you are interested in learning more about!"
+    puts "Enter the number of the attraction you are interested in learning more about!".green
     puts ""
-    puts "Otherwise, type 'exit' to exit."
+    puts "Otherwise, type 'exit' to exit.".red
     puts "" 
   end 
   
@@ -41,24 +41,24 @@ class Austin::CLI
         display_attraction(attraction)
         
         puts ""
-        puts "Want to see a different attraction? Type 'list' to view the attractions again." 
+        puts "Want to see a different attraction? Type 'list' to view the attractions again.".purple
         puts ""
-        puts "Otherwise, type 'exit' to exit."
+        puts "Otherwise, type 'exit' to exit.".red
         puts ""
       elsif input == "list"
         puts ""
         puts ""
-        puts "                    THE TOP ATTRACTIONS IN AUSTIN!"
+        puts "                    THE TOP ATTRACTIONS IN AUSTIN!".light_blue
         puts ""
-        puts "Enter the number located next to the attraction you would like details on:"
+        puts "Enter the number located next to the attraction you would like details on:".green
         puts ""
-        puts "                    Otherwise, type 'exit' to exit."
+        puts "                    Otherwise, type 'exit' to exit.".red
         puts ""
         puts "" 
         print_all_attractions
       elsif input != "exit"
         puts "" 
-        puts "Invalid entry. Please type: a number for information on an attraction, 'list', or 'exit'."
+        puts "Invalid entry. Please type: a number for information on an attraction, 'list', or 'exit'.".yellow
         puts ""
       end
     end 

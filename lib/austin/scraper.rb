@@ -10,15 +10,14 @@ class Austin::Scraper
       # type = att.css("span")[0].text 
       # price = att.css("span")[0].text 
       attraction = Austin::Attraction.new(name, url, index)
-      # binding.pry
     end 
   end 
   
   def self.scrape_single_attraction(attraction)
     doc = Nokogiri::HTML(open("https://www.tripadvisor.com#{attraction.url}")) 
     
-    description = doc.css("#taplc_location_detail_about_card_0")[0].css("span")[0]
-    open_hours = doc.css("#taplc_location_detail_about_card_0")[0].css("div")[6]
+    description = doc.css("#taplc_location_detail_about_card_0")[0].css("span")[0].text
+    open_hours = doc.css("#taplc_location_detail_about_card_0")[0].css("div")[6].text
   end 
   
 end 
