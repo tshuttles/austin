@@ -9,7 +9,6 @@ class Austin::Scraper
       url = att.css("a")[0].attr("href") 
       # type = att.css("span")[0].text 
       # price = att.css("span")[0].text 
-      # attraction = Austin::Attraction.new(name, url, type, price, index)
       attraction = Austin::Attraction.new(name, url, index)
       # binding.pry
     end 

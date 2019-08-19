@@ -23,6 +23,7 @@ class Austin::CLI
     Austin::Attraction.all.each do |att|
       puts "#{att.index}. #{att.name}"
     end
+    puts ""
     puts "Enter the number of the attraction you are interested in learning more about!"
     puts ""
     puts "Otherwise, type 'exit' to exit."
@@ -64,6 +65,7 @@ class Austin::CLI
   end 
   
   def display_attraction(attraction)
+    puts "---------------------------------------------------------"
     puts ""
     puts "Attraction: #{attraction.name.upcase}"
     puts ""
@@ -75,8 +77,9 @@ class Austin::CLI
     puts ""
     puts "Open Hours: #{attraction.open_hours}"
     puts ""
-    puts "Website: #{attraction.url}"      
+    puts "Website: https://www.tripadvisor.com#{attraction.url}"      
     puts ""
+    puts "---------------------------------------------------------"
   end 
   
 end 
