@@ -9,16 +9,16 @@ class Austin::CLI
   
   def welcome 
     puts "" 
-    puts "                    Welcome to Austin, Texas!".blue
+    puts "                    Welcome to Austin, Texas!".light_blue
     puts "" 
-    puts "               The Live Music Capital of the World!".blue
+    puts "               The Live Music Capital of the World!".light_blue
     puts "" 
     puts "" 
   end 
   
   def print_all_attractions
     puts ""
-    puts "                  THE TOP ATTRACTIONS IN AUSTIN!".blue
+    puts "                  THE TOP ATTRACTIONS IN AUSTIN!".light_blue
     puts ""
     Austin::Attraction.all.each do |att|
       puts "#{att.index}. #{att.name}".white
@@ -67,13 +67,13 @@ class Austin::CLI
   def display_attraction(attraction)
     puts "---------------------------------------------------------"
     puts ""
-    puts "Attraction: #{attraction.name.upcase}"
+    puts "Attraction:   #{attraction.name.upcase}"
     puts ""
-    puts "Description: #{attraction.description}"
+    puts "Description:  #{attraction.description}"
     puts ""
-    puts "Open Hours: #{attraction.open_hours}"
+    puts "Open Hours:   #{attraction.open_hours}"
     puts ""
-    puts "Website: https://www.tripadvisor.com#{attraction.url}"      
+    puts "Website:      https://www.tripadvisor.com#{attraction.url}"      
     puts ""
     puts "---------------------------------------------------------"
   end 
