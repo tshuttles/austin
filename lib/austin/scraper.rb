@@ -14,8 +14,11 @@ class Austin::Scraper
   def self.scrape_single_attraction(attraction)
     doc = Nokogiri::HTML(open("https://www.tripadvisor.com#{attraction.url}")) 
     
-    description = doc.css("#taplc_location_detail_about_card_0")[0].css("span")[0].text
-    open_hours = doc.css("#taplc_location_detail_about_card_0")[0].css("div")[6].text
+    description = doc.css("#taplc_location_detail_about_card_0")[0].css("span")[0].text if doc.css("#taplc_location_detail_about_card_0")[0].css("span")[0]
+    open_hours = doc.css("#taplc_location_detail_about_card_0")[0].css("div")[6].text if doc.css("#taplc_location_detail_about_card_0")[0].css("div")[6]
+    
+    attraction.description = description
+    attraction.open_hours = open_hours
   end 
   
 end 

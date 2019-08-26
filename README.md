@@ -2,7 +2,7 @@
 
 Welcome to the Austin CLI! This is my first project as a Flatiron Student. 
 
-This application pulls information from Trip Advisor's Banff website https://www.tripadvisor.com/Attractions-g30196-Activities-Austin_Texas.html, which lists 30 different attractions that Austin, Texas, has to offer! Austin is a great, quickly-developing city filled with great food, culture, history, and tech. Find out which attractions you're interested in most and then make your dream trip a reality! 
+This application pulls information from Trip Advisor's Austin website https://www.tripadvisor.com/Attractions-g30196-Activities-Austin_Texas.html, which lists 30 different attractions that Austin, Texas, has to offer! Austin is a great, quickly-developing city filled with great food, culture, history, and tech. Find out which attractions you're interested in most and then make your dream trip a reality! 
 
 
 ## Installation

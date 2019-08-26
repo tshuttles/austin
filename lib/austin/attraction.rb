@@ -16,7 +16,8 @@ class Austin::Attraction
   end 
   
   def self.find_attraction(i)
-    self.all.find {|att| att.index == i}
+    # self.all.find {|att| att.index == i}
+    @@all[i]
   end
   
 end 

@@ -20,14 +20,15 @@ class Austin::CLI
     puts ""
     puts "                  THE TOP ATTRACTIONS IN AUSTIN!".light_blue
     puts ""
-    Austin::Attraction.all.each do |att|
-      puts "#{att.index}. #{att.name}".white
+    Austin::Attraction.all.each.with_index(1) do |att, index|
+      puts "#{index} #{att.name}".white
     end
-    puts ""
-    puts "Enter the number of the attraction you are interested in learning more about!".green
-    puts ""
-    puts "Otherwise, type 'exit' to exit.".red
-    puts "" 
+    menu
+    # puts ""
+    # puts "Enter the number of the attraction you are interested in learning more about!".green
+    # puts ""
+    # puts "Otherwise, type 'exit' to exit.".red
+    # puts "" 
   end 
   
   def start
@@ -39,22 +40,22 @@ class Austin::CLI
         attraction = Austin::Attraction.find_attraction(input.to_i)
         Austin::Scraper.scrape_single_attraction(attraction)
         display_attraction(attraction)
-        
-        puts ""
-        puts "Want to see a different attraction? Type 'list' to view the attractions again.".green
-        puts ""
-        puts "Otherwise, type 'exit' to exit.".red
-        puts ""
+        menu
+        # puts ""
+        # puts "Want to see a different attraction? Type 'list' to view the attractions again.".green
+        # puts ""
+        # puts "Otherwise, type 'exit' to exit.".red
+        # puts ""
       elsif input == "list"
-        puts ""
-        puts ""
-        puts "                    THE TOP ATTRACTIONS IN AUSTIN!".light_blue
-        puts ""
-        puts "Enter the number located next to the attraction you would like details on:".green
-        puts ""
-        puts "                    Otherwise, type 'exit' to exit.".red
-        puts ""
-        puts "" 
+        # puts ""
+        # puts ""
+        # puts "                    THE TOP ATTRACTIONS IN AUSTIN!".light_blue
+        # puts ""
+        # puts "Enter the number located next to the attraction you would like details on:".green
+        # puts ""
+        # puts "                    Otherwise, type 'exit' to exit.".red
+        # puts ""
+        # puts "" 
         print_all_attractions
       elsif input != "exit"
         puts "" 
@@ -76,6 +77,14 @@ class Austin::CLI
     puts "Website:      https://www.tripadvisor.com#{attraction.url}"      
     puts ""
     puts "---------------------------------------------------------"
+  end 
+  
+  def menu 
+    puts ""
+    puts "Want to see a different attraction? Type 'list' to view the attractions again.".green
+    puts ""
+    puts "Otherwise, type 'exit' to exit.".red
+    puts ""
   end 
   
 end 
